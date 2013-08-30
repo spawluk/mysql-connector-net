@@ -4,3 +4,6 @@
 /_ReSharper.MySQLClient-VS2012
 /Source/MySql.Data/bin
 /Source/MySql.Data/obj
+/Source/MySql.Data/*.snk
+
+*.user

@@ -37,6 +37,7 @@ using System.Security;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: AllowPartiallyTrustedCallers()]
+[assembly: AssemblyKeyFile("keyfile.snk")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -50,4 +51,4 @@ using System.Security;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 //[assembly: Guid("01520f33-9ecd-4574-96d0-5e6604e0f3aa")]
 
-[assembly: AssemblyKeyName("ConnectorNet")]
+//[assembly: AssemblyKeyName("ConnectorNet")]

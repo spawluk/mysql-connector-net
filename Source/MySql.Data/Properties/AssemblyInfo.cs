@@ -40,6 +40,8 @@ using System.Security;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
+[assembly: AssemblyKeyFile("keyfile.snk")]
+
 #if !CF
 [assembly: AssemblyTitle("MySql.Data.dll")]
 #if !RT
@@ -86,10 +88,10 @@ using System.Security;
 [assembly: InternalsVisibleTo("MySql.Data.Entity, PublicKey = 0024000004800000940000000602000000240000525341310004000001000100d973bda91f71752c78294126974a41a08643168271f65fc0fb3cd45f658da01fbca75ac74067d18e7afbf1467d7a519ce0248b13719717281bb4ddd4ecd71a580dfe0912dfc3690b1d24c7e1975bf7eed90e4ab14e10501eedf763bff8ac204f955c9c15c2cf4ebf6563d8320b6ea8d1ea3807623141f4b81ae30a6c886b3ee1")]
 [assembly: InternalsVisibleTo("MySql.Data.RT.Tests, PublicKey = 0024000004800000940000000602000000240000525341310004000001000100d973bda91f71752c78294126974a41a08643168271f65fc0fb3cd45f658da01fbca75ac74067d18e7afbf1467d7a519ce0248b13719717281bb4ddd4ecd71a580dfe0912dfc3690b1d24c7e1975bf7eed90e4ab14e10501eedf763bff8ac204f955c9c15c2cf4ebf6563d8320b6ea8d1ea3807623141f4b81ae30a6c886b3ee1")]
 #else
-[assembly: InternalsVisibleTo("MySql.Data.Tests")]
-[assembly: InternalsVisibleTo("MySql.Data.CF.Tests")]
-[assembly: InternalsVisibleTo("MySql.Data.Entity")]
-[assembly: InternalsVisibleTo("MySql.Data.RT.Tests")]
+//[assembly: InternalsVisibleTo("MySql.Data.Tests")]
+//[assembly: InternalsVisibleTo("MySql.Data.CF.Tests")]
+[assembly: InternalsVisibleTo("MySql.Data.Entity, PublicKey=0024000004800000940000000602000000240000525341310004000001000100cb05faa329cf8228a908ad52eedad10165ae1e4a66f7b205f0c4382961b501c9b4919875a61fdbdd2ba08a1baa19d6fc15ba6154a2cfe8e8c433a31caf00a84ff9f19ab830bdb05f5db0363bd6aaf60f4f21e2aecbcdd3810590783c05c68609faa26c41f1e50db8c18aa8c7b000960c198e385c5a44e7e61034a74ed41914ae")]
+//[assembly: InternalsVisibleTo("MySql.Data.RT.Tests")]
 #endif
 
 #if CF

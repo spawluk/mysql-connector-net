@@ -7,3 +7,13 @@
 /Source/MySql.Data/*.snk
 
 *.user
+/Source/MySql.Data.Entity/bin/v4.5/Debug
+
+/Source/MySql.Data.Entity/obj/v4.5
+/Source/MySql.Web/bin/v4.5/Debug
+/Source/MySql.Web/obj/v4.5
+/Tests/MySql.Data.Entity.CodeFirst.Tests/obj/v4.5
+*.snk
+v4.5
+/packages/EntityFramework.6.0.0-rc1/Content
+/packages/EntityFramework.6.0.0-rc1

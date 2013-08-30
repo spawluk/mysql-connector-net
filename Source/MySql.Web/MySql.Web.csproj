@@ -14,9 +14,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MySql.Web</RootNamespace>
     <AssemblyName>MySql.Web</AssemblyName>
-    <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>keyfile.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -38,7 +37,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <DefineConstants Condition=" $(Framework) >= '4.0' ">NET_40_OR_GREATER</DefineConstants>
+    <DefineConstants Condition=" $(Framework) &gt;= '4.0' ">NET_40_OR_GREATER</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,7 +78,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" Condition="$(Framework) >= '3.5'"/>
+    <Reference Include="System.Web.ApplicationServices" Condition="$(Framework) &gt;= '3.5'" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +112,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="keyfile.snk" />
     <None Include="Properties\schema6.sql" />
     <None Include="Properties\schema1.sql" />
     <None Include="Properties\schema4.sql" />

@@ -1,0 +1,6 @@
+/*.user
+/*.suo
+/_ReSharper.MySQLClient-mono
+/_ReSharper.MySQLClient-VS2012
+/Source/MySql.Data/bin
+/Source/MySql.Data/obj
